@@ -1,0 +1,15 @@
+# package.use# required by net-misc/networkmanager-1.40.2::gentoo[-iwd,wifi]
+# required by networkmanager (argument)
+>=net-wireless/wpa_supplicant-2.10-r1 dbus
+# required by app-emulation/virt-manager-4.0.0::gentoo[gtk,-test]
+# required by @selected
+# required by @world (argument)
+>=net-misc/spice-gtk-0.41 usbredir
+# required by gnome-base/gnome-keyring-42.1-r1::gentoo
+# required by virtual/secret-service-0::gentoo
+# required by app-crypt/libsecret-0.20.5-r3::gentoo
+>=app-crypt/gcr-3.41.1 gtk
+# required by net-libs/webkit-gtk-2.36.7::gentoo
+# required by www-client/surf-2.1-r2::gentoo
+# required by www-client/surf (argument)
+>=media-libs/harfbuzz-5.3.1-r1 icu
