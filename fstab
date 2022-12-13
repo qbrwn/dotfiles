@@ -1,1 +1,25 @@
-/etc/fstab
+# /etc/fstab: static file system information.
+# <fs>			<mountpoint>	<type>		<opts>		<dump/pass>
+
+
+#/dev/sda1:boot 
+UUID="3088-9EC1"								/boot  vfat  defaults,noatime  0 2
+
+#/dev/sda2:swap
+UUID="6d2a3e20-55b4-4361-84d6-e77b9408acc3"     none  swap  sw  0 0  
+
+#/dev/mapper/vg0-root: 
+UUID="b74a023b-1450-418c-827a-928f221a98e7"     /  xfs  defaults  0 0
+
+#/dev/mapper/vg0-var: 
+UUID="21827ba6-44e7-4f39-8833-02cf2b5c4834"     /var  btrfs  ssd,compress=zstd:15,compress-force=zstd:15  0 0
+
+#/dev/mapper/vg0-home
+UUID="796b7017-0719-4415-9a04-28a5a44972df"     /home  btrfs  ssd,compress=zstd:15,compress-force=zstd:15  0 0
+
+#tmp
+tmpfs											/tmp  tmpfs  rw,nosuid,noatime,nodev,size=2G,mode=1777  0 0
+
+#/dev/sdb:backup usb 
+UUID="3627-8816"							    /media  vfat  defaults,auto  0 0
+
